@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Bryce-Soghigian/video_streaming_nodeJS/issues"
   },
-  "homepage": "https://github.com/Bryce-Soghigian/video_streaming_nodeJS#readme"
+  "homepage": "https://github.com/Bryce-Soghigian/video_streaming_nodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

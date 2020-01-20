@@ -4,13 +4,13 @@ const path = require("path");
 const app = express();
 
 
-const PORT = process.env.PORT || 5555
+const PORT = 5555;
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "index.html"));
 });
 
 app.get("/video", function(req, res) {
-  const path = "/video.mp4";
+  const path = "assets/video.mp4";
   const stat = fs.statSync(path);
   const fileSize = stat.size;
   const range = req.headers.range;
@@ -40,5 +40,5 @@ app.get("/video", function(req, res) {
 });
 
 app.listen(PORT, function(){
-    console.log(`============App running on {PORT}`)
+    console.log(`============App running on ${PORT}`)
 })
